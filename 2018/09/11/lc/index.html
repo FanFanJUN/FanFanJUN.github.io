@@ -17,16 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>小白</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <title>lc | 小白</title>
+  <meta name="description" content="ES6 声明变量的六种方法ES5 只有两种声明变量的方法：var命令和function命令。ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。1.变量声明const和let块级作用域说白了只要在{}花括号内的代码块即可以认为 let 和 const 的作用域。et 和 const 声明只在最靠近的一个块中（花括号">
+<meta property="og:type" content="article">
+<meta property="og:title" content="lc">
+<meta property="og:url" content="http://yoursite.com/2018/09/11/lc/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ES6 声明变量的六种方法ES5 只有两种声明变量的方法：var命令和function命令。ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。1.变量声明const和let块级作用域说白了只要在{}花括号内的代码块即可以认为 let 和 const 的作用域。et 和 const 声明只在最靠近的一个块中（花括号">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-11T02:26:53.044Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="lc">
+<meta name="twitter:description" content="ES6 声明变量的六种方法ES5 只有两种声明变量的方法：var命令和function命令。ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。1.变量声明const和let块级作用域说白了只要在{}花括号内的代码块即可以认为 let 和 const 的作用域。et 和 const 声明只在最靠近的一个块中（花括号">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/index.html">
+  <link rel="canonical" href="http://yoursite.com/2018/09/11/lc/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -268,67 +272,171 @@
 </aside>
 
   
-  <main class="main" role="main">
   
-  <div class="content article-list">
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-lc" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
+    <div class="article-header">
+      
+        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/11/lc/">lc</a>
+    <h1 class="article-title" itemprop="name">
+      lc
     </h1>
   
 
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
+      
+      <div class="article-meta">
+        <span class="article-date">
     <i class="icon icon-calendar-check"></i>
 	<a href="/2018/09/11/lc/" class="article-date">
-	  <time datetime="2018-09-11T02:25:52.000Z" itemprop="datePublished">9月 11</time>
+	  <time datetime="2018-09-11T02:25:52.000Z" itemprop="datePublished">2018-09-11</time>
 	</a>
 </span>
-    
-    
+        
+        
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/11/lc/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
 
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/postName/">我的博客</a>
-    </h1>
-  
 
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/11/lc/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <p>ES6 声明变量的六种方法<br>ES5 只有两种声明变量的方法：var命令和function命令。ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。<br>1.变量声明const和let<br>块级作用域<br>说白了只要在{}花括号内的代码块即可以认为 let 和 const 的作用域。<br>et 和 const 声明只在最靠近的一个块中（花括号内）有效<br>const 在声明时必须被赋值<br>2.字符串<br>第一个用途，基本的字符串格式化。将表达式嵌入字符串中进行拼接。用${}来界定。<br>const user = ‘world’;<br>console.log(<code>hello ${user}</code>);  // hello world<br>3.箭头函数<br>  ● 不需要 function 关键字来创建函数<br>  ● 省略 return 关键字<br>  ● 继承当前上下文的 this 关键字<br>当你的函数有且仅有一个参数的时候，是可以省略掉括号的。当你函数返回有且仅有一个表达式的时候可以省略{} 和 return</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2018/09/11/lc/" title="lc" target="_blank" rel="external">http://yoursite.com/2018/09/11/lc/</a>
+    </li>
+    
+    
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/FanFanJUN" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/LC.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/FanFanJUN" target="_blank"><span class="text-dark">LC</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <div>Stay hungry,Stay foolish.</div>
+      </div>
+    </figure>
   </div>
+</div>
+
+
+    </div>
+  </article>
   
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/09/10/postName/" class="article-date">
-	  <time datetime="2018-09-10T13:56:21.000Z" itemprop="datePublished">9月 10</time>
-	</a>
-</span>
     
-    
+  <section id="comments">
+  	
+       
+    <div id="vcomments"></div>
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/10/postName/#comments" class="article-comment-link">评论</a></span>
     
-  </p>
-</article>
+    
+  </section>
 
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2018/09/10/postName/" title="我的博客"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
     
   </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-   
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -385,6 +493,33 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
+    
+        
+    
+   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/valine"></script>
+   <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+     var meta = 'nick,mail,link';
+     meta = meta.split(',').filter(function (item) {
+       return GUEST.indexOf(item)>-1;
+     });
+     new Valine({
+         el: '#vcomments' ,
+         verify: false,
+         notify: false,
+         appId: '',
+         appKey: '',
+         placeholder: 'Just go go',
+         avatar:'mm',
+         meta:meta,
+         pageSize:'10' || 10,
+         visitor: false
+     });
+   </script>
+
+    
+
     
     
 
