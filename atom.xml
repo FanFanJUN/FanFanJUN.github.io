@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://lcccc.com.cn/"/>
   <updated>2018-09-11T02:26:53.044Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://lcccc.com.cn/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>lc</title>
-    <link href="http://yoursite.com/2018/09/11/lc/"/>
-    <id>http://yoursite.com/2018/09/11/lc/</id>
+    <link href="http://lcccc.com.cn/2018/09/11/lc/"/>
+    <id>http://lcccc.com.cn/2018/09/11/lc/</id>
     <published>2018-09-11T02:25:52.000Z</published>
     <updated>2018-09-11T02:26:53.044Z</updated>
     
