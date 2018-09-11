@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-09-11T02:26:53.044Z</updated>
+  <updated>2018-09-11T05:00:19.176Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>lc</title>
-    <link href="http://lcccc.com.cn/2018/09/11/lc/"/>
-    <id>http://lcccc.com.cn/2018/09/11/lc/</id>
+    <title>ES6绑定this的三种方式</title>
+    <link href="http://lcccc.com.cn/2018/09/11/ES6_bind/"/>
+    <id>http://lcccc.com.cn/2018/09/11/ES6_bind/</id>
     <published>2018-09-11T02:25:52.000Z</published>
-    <updated>2018-09-11T02:26:53.044Z</updated>
+    <updated>2018-09-11T05:00:19.176Z</updated>
     
-    <content type="html"><![CDATA[<p>ES6 声明变量的六种方法<br>ES5 只有两种声明变量的方法：var命令和function命令。ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。<br>1.变量声明const和let<br>块级作用域<br>说白了只要在{}花括号内的代码块即可以认为 let 和 const 的作用域。<br>et 和 const 声明只在最靠近的一个块中（花括号内）有效<br>const 在声明时必须被赋值<br>2.字符串<br>第一个用途，基本的字符串格式化。将表达式嵌入字符串中进行拼接。用${}来界定。<br>const user = ‘world’;<br>console.log(<code>hello ${user}</code>);  // hello world<br>3.箭头函数<br>  ● 不需要 function 关键字来创建函数<br>  ● 省略 return 关键字<br>  ● 继承当前上下文的 this 关键字<br>当你的函数有且仅有一个参数的时候，是可以省略掉括号的。当你函数返回有且仅有一个表达式的时候可以省略{} 和 return</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="0-React绑定this的三种方式"><a href="#0-React绑定this的三种方式" class="headerlink" title="0.React绑定this的三种方式"></a>0.React绑定this的三种方式</h1><h2 id="0-1-bind"><a href="#0-1-bind" class="headerlink" title="0.1 bind()"></a>0.1 bind()</h2><pre><code>handleClick (name, e) {    console.log(this.state.message + name)}render () {    return (        &lt;div&gt;            &lt;button onClick={ this.handleClick.bind(this, &apos;赵四&apos;) }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre><h2 id="0-2-构造函数内绑定"><a href="#0-2-构造函数内绑定" class="headerlink" title="0.2 构造函数内绑定"></a>0.2 构造函数内绑定</h2><pre><code>handleClick (e) {    console.log(this.state.message)}render () {    return (        &lt;div&gt;            &lt;button onClick={ this.handleClick }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre><h2 id="0-3-箭头函数-es6语法，用得最多"><a href="#0-3-箭头函数-es6语法，用得最多" class="headerlink" title="0.3 箭头函数(es6语法，用得最多)"></a>0.3 箭头函数(es6语法，用得最多)</h2><pre><code>handleClick = (e) =&gt; {    console.log(this.state.message)}render () {    return (        &lt;div&gt;            &lt;button onClick={ this.handleClick }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre><h2 id="0-4-箭头函数传参"><a href="#0-4-箭头函数传参" class="headerlink" title="0.4 箭头函数传参"></a>0.4 箭头函数传参</h2><pre><code>render () {    return (        &lt;div&gt;            &lt;button onClick={ ()=&gt;this.handleClick(&apos;参数&apos;) }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;ES6 声明变量的六种方法&lt;br&gt;ES5 只有两种声明变量的方法：var命令和function命令。ES6除了添加let和const命令，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。&lt;br&gt;1.变量声明const和let
+        &lt;h1 id=&quot;0-React绑定this的三种方式&quot;&gt;&lt;a href=&quot;#0-React绑定this的三种方式&quot; class=&quot;headerlink&quot; title=&quot;0.React绑定this的三种方式&quot;&gt;&lt;/a&gt;0.React绑定this的三种方式&lt;/h1&gt;&lt;h2 id=&quot;0
       
     
     </summary>
