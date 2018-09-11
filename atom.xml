@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-09-11T05:00:19.176Z</updated>
+  <updated>2018-09-11T06:10:35.167Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://lcccc.com.cn/2018/09/11/ES6_bind/"/>
     <id>http://lcccc.com.cn/2018/09/11/ES6_bind/</id>
     <published>2018-09-11T02:25:52.000Z</published>
-    <updated>2018-09-11T05:00:19.176Z</updated>
+    <updated>2018-09-11T06:10:35.167Z</updated>
     
     <content type="html"><![CDATA[<h1 id="0-React绑定this的三种方式"><a href="#0-React绑定this的三种方式" class="headerlink" title="0.React绑定this的三种方式"></a>0.React绑定this的三种方式</h1><h2 id="0-1-bind"><a href="#0-1-bind" class="headerlink" title="0.1 bind()"></a>0.1 bind()</h2><pre><code>handleClick (name, e) {    console.log(this.state.message + name)}render () {    return (        &lt;div&gt;            &lt;button onClick={ this.handleClick.bind(this, &apos;赵四&apos;) }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre><h2 id="0-2-构造函数内绑定"><a href="#0-2-构造函数内绑定" class="headerlink" title="0.2 构造函数内绑定"></a>0.2 构造函数内绑定</h2><pre><code>handleClick (e) {    console.log(this.state.message)}render () {    return (        &lt;div&gt;            &lt;button onClick={ this.handleClick }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre><h2 id="0-3-箭头函数-es6语法，用得最多"><a href="#0-3-箭头函数-es6语法，用得最多" class="headerlink" title="0.3 箭头函数(es6语法，用得最多)"></a>0.3 箭头函数(es6语法，用得最多)</h2><pre><code>handleClick = (e) =&gt; {    console.log(this.state.message)}render () {    return (        &lt;div&gt;            &lt;button onClick={ this.handleClick }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre><h2 id="0-4-箭头函数传参"><a href="#0-4-箭头函数传参" class="headerlink" title="0.4 箭头函数传参"></a>0.4 箭头函数传参</h2><pre><code>render () {    return (        &lt;div&gt;            &lt;button onClick={ ()=&gt;this.handleClick(&apos;参数&apos;) }&gt;Say Hello&lt;/button&gt;        &lt;/div&gt;    )}</code></pre>]]></content>
     
@@ -34,6 +34,10 @@
     
     </summary>
     
+      <category term="web前端" scheme="http://lcccc.com.cn/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="ES6" scheme="http://lcccc.com.cn/tags/ES6/"/>
     
   </entry>
   
