@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-09-17T13:01:35.759Z</updated>
+  <updated>2018-09-17T13:11:41.240Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -17,16 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Gitstudy</title>
+    <title>Git相关学习</title>
     <link href="http://lcccc.com.cn/2018/09/17/Gitstudy/"/>
     <id>http://lcccc.com.cn/2018/09/17/Gitstudy/</id>
     <published>2018-09-17T13:01:35.000Z</published>
-    <updated>2018-09-17T13:01:35.759Z</updated>
+    <updated>2018-09-17T13:11:41.240Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Git相关学习"><a href="#Git相关学习" class="headerlink" title="Git相关学习"></a>Git相关学习</h1><p><img src="http://www.runoob.com/wp-content/uploads/2015/02/f7246b600c338744a9591cd7530fd9f9d62aa0f8.png" alt="Git"></p><h4 id="推荐-梁雪峰Git教程"><a href="#推荐-梁雪峰Git教程" class="headerlink" title="推荐-梁雪峰Git教程"></a><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">推荐-梁雪峰Git教程</a></h4><h4 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a><a href="https://git-scm.com/docs" target="_blank" rel="noopener">官方文档</a></h4><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">官方Downloads</a></p><p>安装后配置你的用户名、密码</p><ul><li>$ git config –global user.name “Your Name”</li><li>$ git config –global user.email “<a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a>“</li></ul><h4 id="工具（小乌龟）"><a href="#工具（小乌龟）" class="headerlink" title="工具（小乌龟）"></a>工具（小乌龟）</h4><p><a href="https://tortoisegit.org/download/" target="_blank" rel="noopener">下载链接</a></p><p><a href="https://www.cnblogs.com/xuwenjin/p/8573603.html" target="_blank" rel="noopener">Git客户端(TortoiseGit)基本使用详解</a></p><h4 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h4><p>创建空文件夹容器</p><ul><li>$ mkdir learngit</li><li>$ cd learngit</li><li>$ pwd</li></ul><p>通过git init命令把这个目录变成Git可以管理的仓库</p><ul><li>$ git init</li></ul><p>Mac上显示隐藏文件命令</p><ul><li>$ defaults write com.apple.finder AppleShowAllFiles TRUE</li><li>$ killall Finder</li></ul><p>or ==ls -ah==命令</p><p>在所创目录文件下创建文件添加文件到Git仓库，分两步：</p><ul><li>$ git add readme.txt</li><li>$ git commit -m “wrote a readme file”</li></ul><h4 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h4><p>显示从最近到最远的提交日志(在Git中，用==HEAD==表示当前版本)</p><ul><li>$ git log –author = name</li></ul><p>回退命令</p><ul><li>$ git reset –hard HEAD^</li></ul><h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><p>创建SSH KEY</p><ul><li>$ ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a>“</li><li>$ open ~/.ssh 命令直接打开</li></ul><h4 id="把本地仓库的内容推送到GitHub仓库。"><a href="#把本地仓库的内容推送到GitHub仓库。" class="headerlink" title="把本地仓库的内容推送到GitHub仓库。"></a>把本地仓库的内容推送到GitHub仓库。</h4><ul><li>$ git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:michaelliao/learngit.git</li><li>$ git push -u origin master </li></ul><p>git如何解决failed to push some refs to git<br>可以通过如下命令进行代码合并【注：pull=fetch+merge]</p><ul><li>git pull –rebase origin master</li></ul><p>三步走：</p><ul><li>$ git add readme.txt</li><li>$ git commit -m “wrote a readme file”</li><li>$ git push origin master </li></ul><h4 id="git如何上传所有的新文件"><a href="#git如何上传所有的新文件" class="headerlink" title="git如何上传所有的新文件"></a>git如何上传所有的新文件</h4><ul><li>$ git status </li><li>$ git add -A</li><li>$ git commit -a -m”first commit”</li><li>$ git push origin master </li></ul><p>git add上传本地项目所有变化的命令三种</p><ul><li>git add -A  提交所有变化</li><li>git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)</li><li>git add . 提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件</li></ul><p>后续。。补充。。</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h1 id=&quot;Git相关学习&quot;&gt;&lt;a href=&quot;#Git相关学习&quot; class=&quot;headerlink&quot; title=&quot;Git相关学习&quot;&gt;&lt;/a&gt;Git相关学习&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://www.runoob.com/wp-content/uploads
+      
+    
     </summary>
     
+      <category term="工具" scheme="http://lcccc.com.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="http://lcccc.com.cn/tags/Git/"/>
     
   </entry>
   

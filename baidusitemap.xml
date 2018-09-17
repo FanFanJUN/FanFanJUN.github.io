@@ -5,14 +5,19 @@
     
   <url>
     <loc>http://lcccc.com.cn/2018/09/17/Gitstudy/</loc>
-    <lastmod>2018-09-17T13:01:35.759Z</lastmod>
+    <lastmod>2018-09-17T13:11:41.240Z</lastmod>
     <data>
         <display>
-        <title>Gitstudy</title>
+        <title>Git相关学习</title>
         <pubTime>2018-09-17T13:01:35.000Z</pubTime>
         
+        <tag>Git</tag>
+         
          
            
+             
+              <breadCrumb title="工具" url="http://lcccc.com.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+          
         </display>
     </data>
     </url>
