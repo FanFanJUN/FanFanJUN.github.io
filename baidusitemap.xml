@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://lcccc.com.cn/2018/09/13/Ant%20Design%20Pro%202.0/</loc>
+    <lastmod>2018-09-18T12:58:34.841Z</lastmod>
+    <data>
+        <display>
+        <title>Ant Design Pro 2.0</title>
+        <pubTime>2018-09-13T03:15:52.000Z</pubTime>
+        
+        <tag>Ant Design Pro 2.0</tag>
+         
+         
+           
+             
+              <breadCrumb title="React技术栈" url="http://lcccc.com.cn/categories/React%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lcccc.com.cn/2018/09/18/Umijs/</loc>
+    <lastmod>2018-09-18T12:57:59.313Z</lastmod>
+    <data>
+        <display>
+        <title>Umijs</title>
+        <pubTime>2018-09-18T12:55:55.000Z</pubTime>
+        
+        <tag>Umijs</tag>
+         
+         
+           
+             
+              <breadCrumb title="React技术栈" url="http://lcccc.com.cn/categories/React%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lcccc.com.cn/2018/09/17/Gitstudy/</loc>
     <lastmod>2018-09-17T13:11:41.240Z</lastmod>
     <data>
@@ -17,26 +57,6 @@
            
              
               <breadCrumb title="工具" url="http://lcccc.com.cn/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lcccc.com.cn/2018/09/13/Ant%20Design%20Pro%202.0/</loc>
-    <lastmod>2018-09-17T03:23:21.046Z</lastmod>
-    <data>
-        <display>
-        <title>Ant Design Pro 2.0</title>
-        <pubTime>2018-09-13T03:15:52.000Z</pubTime>
-        
-        <tag>Ant Design Pro 2.0</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ant Design" url="http://lcccc.com.cn/categories/Ant-Design/"/>
           
         </display>
     </data>

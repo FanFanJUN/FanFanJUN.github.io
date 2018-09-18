@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-09-17T13:11:41.240Z</updated>
+  <updated>2018-09-18T12:57:59.313Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Umijs</title>
+    <link href="http://lcccc.com.cn/2018/09/18/Umijs/"/>
+    <id>http://lcccc.com.cn/2018/09/18/Umijs/</id>
+    <published>2018-09-18T12:55:55.000Z</published>
+    <updated>2018-09-18T12:57:59.313Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="UmiJS-核心：插件机制"><a href="#UmiJS-核心：插件机制" class="headerlink" title="UmiJS(核心：插件机制)"></a>UmiJS(核心：插件机制)</h1><p><a href="https://umijs.org/zh/" target="_blank" rel="noopener">UmiJS中文API官网</a></p><h4 id="普通创建"><a href="#普通创建" class="headerlink" title="普通创建"></a>普通创建</h4><p>安装国内源tyarn</p><ul><li>$ npm i yarn tyarn -g</li><li>$ tyarn -v</li></ul><p>安装umi</p><ul><li>$ tyarn global add umi</li><li>$ umi -v</li></ul><p>快速创建page（umi 里==约定==默认情况下 pages 下所有的 js 文件即路由）</p><ul><li>$ mkdir myapp &amp;&amp; cd myapp</li><li>$ umi g page index </li></ul><p>快速创建dva 的 model</p><ul><li>umi g dva:model foo</li></ul><p>启动本地服务器</p><ul><li>$ umi dev</li></ul><p>部署发布</p><ul><li>$ umi build</li></ul><h4 id="通过脚手架创建项目"><a href="#通过脚手架创建项目" class="headerlink" title="通过脚手架创建项目"></a>通过脚手架创建项目</h4><ul><li>$ mkdir myapp &amp;&amp; cd myapp</li><li>$ yarn create umi</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;UmiJS-核心：插件机制&quot;&gt;&lt;a href=&quot;#UmiJS-核心：插件机制&quot; class=&quot;headerlink&quot; title=&quot;UmiJS(核心：插件机制)&quot;&gt;&lt;/a&gt;UmiJS(核心：插件机制)&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://umijs.o
+      
+    
+    </summary>
+    
+      <category term="React技术栈" scheme="http://lcccc.com.cn/categories/React%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    
+    
+      <category term="Umijs" scheme="http://lcccc.com.cn/tags/Umijs/"/>
+    
+  </entry>
   
   <entry>
     <title>Git相关学习</title>
@@ -46,7 +71,7 @@
     <link href="http://lcccc.com.cn/2018/09/13/Ant%20Design%20Pro%202.0/"/>
     <id>http://lcccc.com.cn/2018/09/13/Ant Design Pro 2.0/</id>
     <published>2018-09-13T03:15:52.000Z</published>
-    <updated>2018-09-17T03:23:21.046Z</updated>
+    <updated>2018-09-18T12:58:34.841Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Ant-Design-Pro-2-0"><a href="#Ant-Design-Pro-2-0" class="headerlink" title="Ant Design Pro 2.0"></a>Ant Design Pro 2.0</h1><h6 id="主要改进和改变详看官网"><a href="#主要改进和改变详看官网" class="headerlink" title="主要改进和改变详看官网"></a>主要改进和改变详看<a href="https://pro.ant.design/" target="_blank" rel="noopener">官网</a></h6><h6 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h6><ul><li>$ git clone –depth=1 <a href="https://github.com/ant-design/ant-design-pro.git" target="_blank" rel="noopener">https://github.com/ant-design/ant-design-pro.git</a> my-project</li><li>$ cd my-project</li><li>$ npm install</li><li>$ npm start</li></ul><p>使用cnpm加速</p><ul><li>$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></li></ul><h6 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h6><p><img src="https://res.cloudinary.com/dnmtpbj1g/image/upload/v1536987988/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0md/QQ20180915-130514.png" alt="目录结构"></p>]]></content>
     
@@ -59,7 +84,7 @@
     
     </summary>
     
-      <category term="Ant Design" scheme="http://lcccc.com.cn/categories/Ant-Design/"/>
+      <category term="React技术栈" scheme="http://lcccc.com.cn/categories/React%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
     
     
       <category term="Ant Design Pro 2.0" scheme="http://lcccc.com.cn/tags/Ant-Design-Pro-2-0/"/>
