@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-09-18T12:57:59.313Z</updated>
+  <updated>2018-09-21T03:03:00.781Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React技术栈学习路线</title>
+    <link href="http://lcccc.com.cn/2018/09/21/Reactjsz/"/>
+    <id>http://lcccc.com.cn/2018/09/21/Reactjsz/</id>
+    <published>2018-09-21T02:55:27.000Z</published>
+    <updated>2018-09-21T03:03:00.781Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="React技术栈"><a href="#React技术栈" class="headerlink" title="React技术栈"></a>React技术栈</h1><h4 id="React"><a href="#React" class="headerlink" title="React"></a>React</h4><p><a href="http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html" target="_blank" rel="noopener">阮一峰-React 技术栈系列教程</a></p><p><a href="https://segmentfault.com/a/1190000012921279" target="_blank" rel="noopener">React入门看这篇就够了</a></p><p><a href="https://react.docschina.org/" target="_blank" rel="noopener">React中文官网</a></p><p><a href="http://huziketang.mangojuice.top/books/react/" target="_blank" rel="noopener">React.js 小书</a></p><h4 id="Router"><a href="#Router" class="headerlink" title="Router"></a>Router</h4><p><a href="https://react-guide.github.io/react-router-cn/" target="_blank" rel="noopener">React Router 中文文档</a></p><p><a href="https://reacttraining.com/react-router/web/guides/philosophy" target="_blank" rel="noopener">React Router 英文文档</a></p><h4 id="Redux"><a href="#Redux" class="headerlink" title="Redux"></a>Redux</h4><p><a href="https://redux-saga-in-chinese.js.org/" target="_blank" rel="noopener">redux-saga</a></p><p><a href="http://www.redux.org.cn/" target="_blank" rel="noopener">Redux 中文文档</a></p><h4 id="Dva（dva-是-react-和-redux-的最佳实践）"><a href="#Dva（dva-是-react-和-redux-的最佳实践）" class="headerlink" title="Dva（dva 是 react 和 redux 的最佳实践）"></a>Dva（dva 是 react 和 redux 的最佳实践）</h4><p><a href="https://dvajs.com/" target="_blank" rel="noopener">DvaJS中文官网</a></p><p><a href="https://www.jianshu.com/p/96b5d9d9ad80" target="_blank" rel="noopener">我学 dva 那些事儿</a></p><p><a href="https://www.jianshu.com/p/e184cd6d253c" target="_blank" rel="noopener">dva理论到实践——帮你扫清dva的知识盲点</a></p><p><a href="https://www.npmjs.com/package/mg-roadhog" target="_blank" rel="noopener"> roadhog —— 让 create-react-app 可配的命令行工具</a></p><h4 id="Umi"><a href="#Umi" class="headerlink" title="Umi"></a>Umi</h4><p><a href="https://umijs.org/zh/" target="_blank" rel="noopener">UmiJS</a></p><p>这并不是全部，待续。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;React技术栈&quot;&gt;&lt;a href=&quot;#React技术栈&quot; class=&quot;headerlink&quot; title=&quot;React技术栈&quot;&gt;&lt;/a&gt;React技术栈&lt;/h1&gt;&lt;h4 id=&quot;React&quot;&gt;&lt;a href=&quot;#React&quot; class=&quot;headerlink
+      
+    
+    </summary>
+    
+      <category term="React技术栈" scheme="http://lcccc.com.cn/categories/React%E6%8A%80%E6%9C%AF%E6%A0%88/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Umijs</title>
