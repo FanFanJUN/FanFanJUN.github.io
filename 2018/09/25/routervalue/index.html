@@ -17,23 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>自己热衷的一款Markdown工具-有道云笔记 | 小白</title>
-  <meta name="description" content="自己热衷的一款Markdown工具-有道云笔记之前有使用过SbulimeText但是效果并不是那么理想。首先，原生的ST并不能在写md文件时预览，要想实现预览功能还得安装插件（懒得折腾）其次最不方便的就是没有实现效果的快捷方式，比如我想插入一张图片，一个链接地址。但是在打开md或其他文件还是挺方便的。有道云笔记作为一个国产工具，不得不说还是相当优秀的，至少现在的我是这样亲身感受的。不仅可以记录笔记">
-<meta name="keywords" content="编辑工具">
+  <title>React Router跳转及页面传值 | 小白</title>
+  <meta name="description" content="React Router跳转及页面传值 to: string  1&amp;lt;Link to=&amp;apos;/courses?sort=name&amp;apos;&amp;gt;跳转&amp;lt;Link&amp;gt;  to: object  123456&amp;lt;Link to=&amp;#123;&amp;#123;  pathname: &amp;apos;/courses&amp;apos;,  search: &amp;apos;?sort=name&amp;apo">
+<meta name="keywords" content="React-Router">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自己热衷的一款Markdown工具-有道云笔记">
-<meta property="og:url" content="http://lcccc.com.cn/2018/09/12/mdyoudao/index.html">
+<meta property="og:title" content="React Router跳转及页面传值">
+<meta property="og:url" content="http://lcccc.com.cn/2018/09/25/routervalue/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="自己热衷的一款Markdown工具-有道云笔记之前有使用过SbulimeText但是效果并不是那么理想。首先，原生的ST并不能在写md文件时预览，要想实现预览功能还得安装插件（懒得折腾）其次最不方便的就是没有实现效果的快捷方式，比如我想插入一张图片，一个链接地址。但是在打开md或其他文件还是挺方便的。有道云笔记作为一个国产工具，不得不说还是相当优秀的，至少现在的我是这样亲身感受的。不仅可以记录笔记">
+<meta property="og:description" content="React Router跳转及页面传值 to: string  1&amp;lt;Link to=&amp;apos;/courses?sort=name&amp;apos;&amp;gt;跳转&amp;lt;Link&amp;gt;  to: object  123456&amp;lt;Link to=&amp;#123;&amp;#123;  pathname: &amp;apos;/courses&amp;apos;,  search: &amp;apos;?sort=name&amp;apo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://res.cloudinary.com/dnmtpbj1g/image/upload/v1536757501/QQ20180912-210050.png">
-<meta property="og:updated_time" content="2018-09-12T13:17:23.025Z">
+<meta property="og:updated_time" content="2018-09-25T13:07:11.539Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="自己热衷的一款Markdown工具-有道云笔记">
-<meta name="twitter:description" content="自己热衷的一款Markdown工具-有道云笔记之前有使用过SbulimeText但是效果并不是那么理想。首先，原生的ST并不能在写md文件时预览，要想实现预览功能还得安装插件（懒得折腾）其次最不方便的就是没有实现效果的快捷方式，比如我想插入一张图片，一个链接地址。但是在打开md或其他文件还是挺方便的。有道云笔记作为一个国产工具，不得不说还是相当优秀的，至少现在的我是这样亲身感受的。不仅可以记录笔记">
-<meta name="twitter:image" content="https://res.cloudinary.com/dnmtpbj1g/image/upload/v1536757501/QQ20180912-210050.png">
+<meta name="twitter:title" content="React Router跳转及页面传值">
+<meta name="twitter:description" content="React Router跳转及页面传值 to: string  1&amp;lt;Link to=&amp;apos;/courses?sort=name&amp;apos;&amp;gt;跳转&amp;lt;Link&amp;gt;  to: object  123456&amp;lt;Link to=&amp;#123;&amp;#123;  pathname: &amp;apos;/courses&amp;apos;,  search: &amp;apos;?sort=name&amp;apo">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://lcccc.com.cn/2018/09/12/mdyoudao/index.html">
+  <link rel="canonical" href="http://lcccc.com.cn/2018/09/25/routervalue/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -334,14 +332,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-mdyoudao" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-routervalue" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      自己热衷的一款Markdown工具-有道云笔记
+      React Router跳转及页面传值
     </h1>
   
 
@@ -349,34 +347,61 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2018/09/12/mdyoudao/" class="article-date">
-	  <time datetime="2018-09-12T12:44:15.000Z" itemprop="datePublished">2018-09-12</time>
+	<a href="/2018/09/25/routervalue/" class="article-date">
+	  <time datetime="2018-09-25T13:03:59.000Z" itemprop="datePublished">2018-09-25</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/工具/">工具</a>
+    <a class="article-category-link" href="/categories/React技术栈/">React技术栈</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/编辑工具/">编辑工具</a>
+	<a class="article-tag-link" href="/tags/React-Router/">React-Router</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/12/mdyoudao/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/25/routervalue/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <h3 id="自己热衷的一款Markdown工具-有道云笔记"><a href="#自己热衷的一款Markdown工具-有道云笔记" class="headerlink" title="自己热衷的一款Markdown工具-有道云笔记"></a>自己热衷的一款Markdown工具-有道云笔记</h3><p>之前有使用过SbulimeText但是效果并不是那么理想。首先，原生的ST并不能在写md文件时预览，要想实现预览功能还得安装插件（懒得折腾）其次最不方便的就是没有实现效果的快捷方式，比如我想插入一张图片，一个链接地址。但是在打开md或其他文件还是挺方便的。有道云笔记作为一个国产工具，不得不说还是相当优秀的，至少现在的我是这样亲身感受的。不仅可以记录笔记还可以作为一款Markdown工具，真是不要太完美。</p>
-<h6 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><a href="https://note.youdao.com/" target="_blank" rel="noopener">下载地址</a></h6><p><img src="https://res.cloudinary.com/dnmtpbj1g/image/upload/v1536757501/QQ20180912-210050.png" title="有道云笔记截图"></p>
-<p>效果就是如此。想要写出怎样的页面效果，直接看<a href="http://xianbai.me/learn-md/article/about/readme.html" target="_blank" rel="noopener">Markdwon Api文档</a>就行，不用深入，了解就行</p>
+        <h1 id="React-Router跳转及页面传值"><a href="#React-Router跳转及页面传值" class="headerlink" title="React Router跳转及页面传值"></a>React Router跳转及页面传值</h1><h2 id=""><a href="#" class="headerlink" title=""></a><link></h2><ul>
+<li><strong>to: string</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Link to=&apos;/courses?sort=name&apos;&gt;跳转&lt;Link&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>to: object</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;Link to=&#123;&#123;</span><br><span class="line">  pathname: &apos;/courses&apos;,</span><br><span class="line">  search: &apos;?sort=name&apos;,</span><br><span class="line">  hash: &apos;#the-hash&apos;,</span><br><span class="line">  state: &#123; fromDashboard: true &#125;</span><br><span class="line">&#125;&#125;/&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="this-props-params"><a href="#this-props-params" class="headerlink" title="this.props.params"></a>this.props.params</h2><p>1.定义路由</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path=&apos;/user/:id&apos; component=&#123;UserPage&#125;&gt;&lt;/Route&gt;</span><br></pre></td></tr></table></figure>
+<p>2.跳转前页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Link to=&#123;`/topics/$&#123;id&#125;`&#125; &gt;点击跳转&lt;/Link&gt;</span><br></pre></td></tr></table></figure>
+<p>3.获取参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">this.props.params</span><br><span class="line">或者react-router v4高版本</span><br><span class="line">this.props.（match）.params.参数名   获取URL中的参数值</span><br></pre></td></tr></table></figure>
+<h2 id="state"><a href="#state" class="headerlink" title="state"></a>state</h2><p>state方式依然可以传递任意类型的数据，而且可以不以明文方式传输。state传的参数是加密的</p>
+<ul>
+<li>定义路由</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path= &apos; /user&apos; component= &#123;UserPage&#125;&gt;&lt;/Route&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const data = &#123;id:3,name:sam,age:36&#125;;</span><br><span class="line">const path = &#123;pathname: &apos; /user&apos;,state:data,&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.&lt;Link to=&#123;path&#125;&gt; 用户&lt;/Link&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2.import &#123; hashHistory &#125; from &apos;react-router&apos;</span><br><span class="line">    hashHistory.push (path); </span><br><span class="line">//  browserHistory.push(); 表单跳转</span><br><span class="line">//  this.props.history.push();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>获取数据</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const data = this.props.location.state;</span><br><span class="line">(获取当前路由地址this.props.location.pathname)</span><br><span class="line">const &#123;id, name,age&#125; = data;</span><br></pre></td></tr></table></figure>
+<h2 id="基于-action-进行页面跳转"><a href="#基于-action-进行页面跳转" class="headerlink" title="基于 action 进行页面跳转"></a>基于 action 进行页面跳转</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import &#123; routerRedux &#125; from &apos;dva/router&apos;;</span><br><span class="line"></span><br><span class="line">// Inside Effects</span><br><span class="line">yield put(routerRedux.push(&apos;/logout&apos;));</span><br><span class="line"></span><br><span class="line">// Outside Effects</span><br><span class="line">dispatch(routerRedux.push(&apos;/logout&apos;));</span><br><span class="line"></span><br><span class="line">// With query</span><br><span class="line">routerRedux.push(&#123;</span><br><span class="line">  pathname: &apos;/logout&apos;,</span><br><span class="line">  query: &#123;</span><br><span class="line">    page: 2,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -386,7 +411,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://lcccc.com.cn/2018/09/12/mdyoudao/" title="自己热衷的一款Markdown工具-有道云笔记" target="_blank" rel="external">http://lcccc.com.cn/2018/09/12/mdyoudao/</a>
+      <a href="http://lcccc.com.cn/2018/09/25/routervalue/" title="React Router跳转及页面传值" target="_blank" rel="external">http://lcccc.com.cn/2018/09/25/routervalue/</a>
     </li>
     
     
@@ -433,13 +458,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2018/09/13/Ant Design Pro 2.0/" title="Ant Design Pro 2.0"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2018/09/11/chromsearch/" title="科学上网-使用Google搜索"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/09/22/ssrbuild/" title="自建ss服务器教程"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
