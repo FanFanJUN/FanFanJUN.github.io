@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lcccc.com.cn/2018/10/16/es6/</loc>
+    
+    <lastmod>2018-10-16T14:13:22.489Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lcccc.com.cn/2018/09/25/routervalue/</loc>
     
     <lastmod>2018-09-28T12:12:01.929Z</lastmod>
@@ -86,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://lcccc.com.cn/repository/index.html</loc>
+    <loc>http://lcccc.com.cn/links/index.html</loc>
     
     <lastmod>2018-07-30T18:55:52.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lcccc.com.cn/links/index.html</loc>
+    <loc>http://lcccc.com.cn/repository/index.html</loc>
     
     <lastmod>2018-07-30T18:55:52.000Z</lastmod>
     
