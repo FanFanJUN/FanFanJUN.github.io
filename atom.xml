@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-10-16T14:13:22.489Z</updated>
+  <updated>2018-10-17T15:16:12.443Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://lcccc.com.cn/2018/10/17/Linux/"/>
+    <id>http://lcccc.com.cn/2018/10/17/Linux/</id>
+    <published>2018-10-17T15:01:10.000Z</published>
+    <updated>2018-10-17T15:16:12.443Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><h4 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /root/Docements # 切换到目录/root/Docements</span><br><span class="line">cd ./path          # 切换到当前目录下的path目录中，“.”表示当前目录  </span><br><span class="line">cd ../path         # 切换到上层目录中的path目录中，“..”表示上一层目录</span><br></pre></td></tr></table></figure><h4 id="ls命令（查看文件与目录）"><a href="#ls命令（查看文件与目录）" class="headerlink" title="ls命令（查看文件与目录）"></a>ls命令（查看文件与目录）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls -l #以长数据串的形式列出当前目录下的数据文件和目录</span><br><span class="line">ls -lR #以长数据串的形式列出当前目录下的所有文件</span><br></pre></td></tr></table></figure><h4 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -i file # 删除文件file，在删除之前会询问是否进行该操作</span><br><span class="line">rm -fr dir # 强制删除目录dir中的所有文件</span><br></pre></td></tr></table></figure><h4 id="vim命令-文本编辑"><a href="#vim命令-文本编辑" class="headerlink" title="vim命令(文本编辑)"></a>vim命令(文本编辑)</h4><h4 id="pwd-显示当前目录"><a href="#pwd-显示当前目录" class="headerlink" title="pwd(显示当前目录)"></a>pwd(显示当前目录)</h4><h4 id="sz-下载"><a href="#sz-下载" class="headerlink" title="sz(下载)"></a>sz(下载)</h4><h4 id="rz-上传"><a href="#rz-上传" class="headerlink" title="rz(上传)"></a>rz(上传)</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Linux常用命令&quot;&gt;&lt;a href=&quot;#Linux常用命令&quot; class=&quot;headerlink&quot; title=&quot;Linux常用命令&quot;&gt;&lt;/a&gt;Linux常用命令&lt;/h1&gt;&lt;h4 id=&quot;cd命令&quot;&gt;&lt;a href=&quot;#cd命令&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+    
+      <category term="Linux常用命令" scheme="http://lcccc.com.cn/tags/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>ES6实用性技能</title>
