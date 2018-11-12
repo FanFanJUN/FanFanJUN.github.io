@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-11-05T12:59:26.421Z</updated>
+  <updated>2018-11-12T14:30:07.231Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xshell中配置Java环境以及常用命令</title>
+    <link href="http://lcccc.com.cn/2018/11/12/xshell/"/>
+    <id>http://lcccc.com.cn/2018/11/12/xshell/</id>
+    <published>2018-11-12T14:24:50.000Z</published>
+    <updated>2018-11-12T14:30:07.231Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="xshell中配置Java环境"><a href="#xshell中配置Java环境" class="headerlink" title="xshell中配置Java环境"></a>xshell中配置Java环境</h1><h4 id="直接输入命令（JAVA-HOME为JDK的位置）"><a href="#直接输入命令（JAVA-HOME为JDK的位置）" class="headerlink" title="直接输入命令（JAVA_HOME为JDK的位置）"></a>直接输入命令（JAVA_HOME为JDK的位置）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/local/java/jdk1.8.0_131</span><br><span class="line"></span><br><span class="line">export JRE_HOME=/usr/local/java/jdk1.8.0_131/jre</span><br><span class="line"></span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib</span><br><span class="line"></span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br></pre></td></tr></table></figure><p>输入java -version有版本信息则成功</p><h4 id="部署中常用命令"><a href="#部署中常用命令" class="headerlink" title="部署中常用命令"></a>部署中常用命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">启动项目</span><br><span class="line">sh start.sh</span><br><span class="line"></span><br><span class="line">停止</span><br><span class="line">sh stop.sh</span><br><span class="line"></span><br><span class="line">实时查看日志</span><br><span class="line">tail -f logs/cims.log(日志位置)</span><br><span class="line"></span><br><span class="line">查看所有进程</span><br><span class="line">ps -ef|grep java</span><br><span class="line"></span><br><span class="line">杀进程 </span><br><span class="line">kill -9 端口号</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;xshell中配置Java环境&quot;&gt;&lt;a href=&quot;#xshell中配置Java环境&quot; class=&quot;headerlink&quot; title=&quot;xshell中配置Java环境&quot;&gt;&lt;/a&gt;xshell中配置Java环境&lt;/h1&gt;&lt;h4 id=&quot;直接输入命令（JAVA-H
+      
+    
+    </summary>
+    
+    
+      <category term="Linux常用命令" scheme="http://lcccc.com.cn/tags/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>Git相关学习2</title>
