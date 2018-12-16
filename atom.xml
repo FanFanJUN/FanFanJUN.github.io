@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lcccc.com.cn/"/>
-  <updated>2018-11-12T14:30:07.231Z</updated>
+  <updated>2018-12-16T13:32:24.417Z</updated>
   <id>http://lcccc.com.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ant design form 表单</title>
+    <link href="http://lcccc.com.cn/2018/12/16/form/"/>
+    <id>http://lcccc.com.cn/2018/12/16/form/</id>
+    <published>2018-12-16T13:29:47.000Z</published>
+    <updated>2018-12-16T13:32:24.417Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ant-design-form-表单"><a href="#ant-design-form-表单" class="headerlink" title="ant design form 表单"></a>ant design form 表单</h1><h4 id="Form-create-包装的组件将会自带-this-props-form-属性"><a href="#Form-create-包装的组件将会自带-this-props-form-属性" class="headerlink" title="Form.create 包装的组件将会自带 this.props.form 属性"></a>Form.create 包装的组件将会自带 this.props.form 属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const &#123; form &#125; = this.props</span><br><span class="line"></span><br><span class="line">form.resetFields() 用于清空输入空</span><br><span class="line"></span><br><span class="line">form.validateFields 用于验证</span><br></pre></td></tr></table></figure><h4 id="自定义校验"><a href="#自定义校验" class="headerlink" title="自定义校验"></a>自定义校验</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;FormItem &#123;...formItemLayout&#125; label=&quot;账号名&quot; hasFeedback&gt;</span><br><span class="line">                                &#123;getFieldDecorator(&apos;account&apos;, &#123;</span><br><span class="line">                                    rules: [&#123;</span><br><span class="line">                                        required: true, message: &apos;账号名不能为空&apos;,</span><br><span class="line">                                    &#125;,&#123;</span><br><span class="line">                                        validator: this.checkAccount,</span><br><span class="line">                                    &#125;],</span><br><span class="line">                                    initialValue: &apos;&apos;</span><br><span class="line">                                &#125;)(</span><br><span class="line">                                    &lt;Input placeholder=&quot;手机号或邮箱号&quot;/&gt;</span><br><span class="line">                                )&#125;</span><br><span class="line"> &lt;/FormItem&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">checkAccount(rule, value, callback) &#123;</span><br><span class="line">         var re = /^(\w-*\.*)+@(\w-?)+(\.\w&#123;2,&#125;)+$/;</span><br><span class="line"></span><br><span class="line">        if (value.length==11 || re.test(value)) &#123;</span><br><span class="line">            callback();</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            callback(&apos;账号名为邮箱或手机号&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure><h4 id="Input输入框失焦的时候向服务端发送数据validateTrigger"><a href="#Input输入框失焦的时候向服务端发送数据validateTrigger" class="headerlink" title="Input输入框失焦的时候向服务端发送数据validateTrigger"></a>Input输入框失焦的时候向服务端发送数据validateTrigger</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;Form.Item</span><br><span class="line">      &#123;...formItemLayout&#125;</span><br><span class="line">      label=&#123;HAP.languageChange(&apos;名称&apos;)&#125;</span><br><span class="line">      hasFeedback</span><br><span class="line">    &gt;</span><br><span class="line">      &#123;getFieldDecorator(&apos;name&apos;, &#123;</span><br><span class="line">          rules: [</span><br><span class="line">            &#123;</span><br><span class="line">              required: true,</span><br><span class="line">              whitespace: true,</span><br><span class="line">              validator: this.checkName,</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">          validateTrigger: &apos;onBlur&apos;,</span><br><span class="line">      &#125;)(</span><br><span class="line">        &lt;Input size=&quot;default&quot; /&gt;,</span><br><span class="line">      )&#125;</span><br><span class="line">    &lt;/Form.Item&gt;</span><br></pre></td></tr></table></figure><h4 id="rules限制输入为数字"><a href="#rules限制输入为数字" class="headerlink" title="rules限制输入为数字"></a>rules限制输入为数字</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">rules: [&#123;</span><br><span class="line">                    required: true,</span><br><span class="line">                    whitespace: true,</span><br><span class="line">                    type:&apos;number&apos;,</span><br><span class="line">                    transform(value) &#123;</span><br><span class="line">                      if(value)&#123;</span><br><span class="line">                        return Number(value);</span><br><span class="line">                      &#125;</span><br><span class="line">                    &#125;,</span><br><span class="line"> message: &apos;请输入联系方式&apos; &#125;],</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ant-design-form-表单&quot;&gt;&lt;a href=&quot;#ant-design-form-表单&quot; class=&quot;headerlink&quot; title=&quot;ant design form 表单&quot;&gt;&lt;/a&gt;ant design form 表单&lt;/h1&gt;&lt;h4 id=&quot;F
+      
+    
+    </summary>
+    
+    
+      <category term="Ant Design Pro 2.0" scheme="http://lcccc.com.cn/tags/Ant-Design-Pro-2-0/"/>
+    
+  </entry>
   
   <entry>
     <title>xshell中配置Java环境以及常用命令</title>
