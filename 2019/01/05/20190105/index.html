@@ -17,21 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>ant design form 表单 | 小白</title>
-  <meta name="description" content="ant design form 表单Form.create 包装的组件将会自带 this.props.form 属性12345const &amp;#123; form &amp;#125; = this.propsform.resetFields() 用于清空输入空form.validateFields 用于验证 自定义校验123456789101112&amp;lt;FormItem &amp;#123;...formIte">
-<meta name="keywords" content="Ant Design Pro 2.0">
+  <title>每周一记20190105 | 小白</title>
+  <meta name="description" content="每周一记20190105==在js中优雅使用枚举==原文地址：Enums in Javascript翻译：如何在JavaScript中写枚举 one way123456789var SizeEnum = &amp;#123;  SMALL: 1,  MEDIUM: 2,  LARGE: 3,&amp;#125;;Then use it like so:var mySize = SizeEnum.SMALL; th">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ant design form 表单">
-<meta property="og:url" content="http://lcccc.com.cn/2018/12/16/form/index.html">
+<meta property="og:title" content="每周一记20190105">
+<meta property="og:url" content="http://lcccc.com.cn/2019/01/05/20190105/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ant design form 表单Form.create 包装的组件将会自带 this.props.form 属性12345const &amp;#123; form &amp;#125; = this.propsform.resetFields() 用于清空输入空form.validateFields 用于验证 自定义校验123456789101112&amp;lt;FormItem &amp;#123;...formIte">
+<meta property="og:description" content="每周一记20190105==在js中优雅使用枚举==原文地址：Enums in Javascript翻译：如何在JavaScript中写枚举 one way123456789var SizeEnum = &amp;#123;  SMALL: 1,  MEDIUM: 2,  LARGE: 3,&amp;#125;;Then use it like so:var mySize = SizeEnum.SMALL; th">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-16T13:32:24.417Z">
+<meta property="og:updated_time" content="2019-01-05T09:39:17.009Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ant design form 表单">
-<meta name="twitter:description" content="ant design form 表单Form.create 包装的组件将会自带 this.props.form 属性12345const &amp;#123; form &amp;#125; = this.propsform.resetFields() 用于清空输入空form.validateFields 用于验证 自定义校验123456789101112&amp;lt;FormItem &amp;#123;...formIte">
+<meta name="twitter:title" content="每周一记20190105">
+<meta name="twitter:description" content="每周一记20190105==在js中优雅使用枚举==原文地址：Enums in Javascript翻译：如何在JavaScript中写枚举 one way123456789var SizeEnum = &amp;#123;  SMALL: 1,  MEDIUM: 2,  LARGE: 3,&amp;#125;;Then use it like so:var mySize = SizeEnum.SMALL; th">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://lcccc.com.cn/2018/12/16/form/index.html">
+  <link rel="canonical" href="http://lcccc.com.cn/2019/01/05/20190105/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -332,14 +331,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-form" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-20190105" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      ant design form 表单
+      每周一记20190105
     </h1>
   
 
@@ -347,31 +346,30 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2018/12/16/form/" class="article-date">
-	  <time datetime="2018-12-16T13:29:47.000Z" itemprop="datePublished">2018-12-16</time>
+	<a href="/2019/01/05/20190105/" class="article-date">
+	  <time datetime="2019-01-05T08:50:03.000Z" itemprop="datePublished">2019-01-05</time>
 	</a>
 </span>
         
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/Ant-Design-Pro-2-0/">Ant Design Pro 2.0</a>
-  </span>
-
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/12/16/form/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/01/05/20190105/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <h1 id="ant-design-form-表单"><a href="#ant-design-form-表单" class="headerlink" title="ant design form 表单"></a>ant design form 表单</h1><h4 id="Form-create-包装的组件将会自带-this-props-form-属性"><a href="#Form-create-包装的组件将会自带-this-props-form-属性" class="headerlink" title="Form.create 包装的组件将会自带 this.props.form 属性"></a>Form.create 包装的组件将会自带 this.props.form 属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const &#123; form &#125; = this.props</span><br><span class="line"></span><br><span class="line">form.resetFields() 用于清空输入空</span><br><span class="line"></span><br><span class="line">form.validateFields 用于验证</span><br></pre></td></tr></table></figure>
-<h4 id="自定义校验"><a href="#自定义校验" class="headerlink" title="自定义校验"></a>自定义校验</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;FormItem &#123;...formItemLayout&#125; label=&quot;账号名&quot; hasFeedback&gt;</span><br><span class="line">                                &#123;getFieldDecorator(&apos;account&apos;, &#123;</span><br><span class="line">                                    rules: [&#123;</span><br><span class="line">                                        required: true, message: &apos;账号名不能为空&apos;,</span><br><span class="line">                                    &#125;,&#123;</span><br><span class="line">                                        validator: this.checkAccount,</span><br><span class="line">                                    &#125;],</span><br><span class="line">                                    initialValue: &apos;&apos;</span><br><span class="line">                                &#125;)(</span><br><span class="line">                                    &lt;Input placeholder=&quot;手机号或邮箱号&quot;/&gt;</span><br><span class="line">                                )&#125;</span><br><span class="line"> &lt;/FormItem&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">checkAccount(rule, value, callback) &#123;</span><br><span class="line">         var re = /^(\w-*\.*)+@(\w-?)+(\.\w&#123;2,&#125;)+$/;</span><br><span class="line"></span><br><span class="line">        if (value.length==11 || re.test(value)) &#123;</span><br><span class="line">            callback();</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            callback(&apos;账号名为邮箱或手机号&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="Input输入框失焦的时候向服务端发送数据validateTrigger"><a href="#Input输入框失焦的时候向服务端发送数据validateTrigger" class="headerlink" title="Input输入框失焦的时候向服务端发送数据validateTrigger"></a>Input输入框失焦的时候向服务端发送数据validateTrigger</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;Form.Item</span><br><span class="line">      &#123;...formItemLayout&#125;</span><br><span class="line">      label=&#123;HAP.languageChange(&apos;名称&apos;)&#125;</span><br><span class="line">      hasFeedback</span><br><span class="line">    &gt;</span><br><span class="line">      &#123;getFieldDecorator(&apos;name&apos;, &#123;</span><br><span class="line">          rules: [</span><br><span class="line">            &#123;</span><br><span class="line">              required: true,</span><br><span class="line">              whitespace: true,</span><br><span class="line">              validator: this.checkName,</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">          validateTrigger: &apos;onBlur&apos;,</span><br><span class="line">      &#125;)(</span><br><span class="line">        &lt;Input size=&quot;default&quot; /&gt;,</span><br><span class="line">      )&#125;</span><br><span class="line">    &lt;/Form.Item&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="rules限制输入为数字"><a href="#rules限制输入为数字" class="headerlink" title="rules限制输入为数字"></a>rules限制输入为数字</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">rules: [&#123;</span><br><span class="line">                    required: true,</span><br><span class="line">                    whitespace: true,</span><br><span class="line">                    type:&apos;number&apos;,</span><br><span class="line">                    transform(value) &#123;</span><br><span class="line">                      if(value)&#123;</span><br><span class="line">                        return Number(value);</span><br><span class="line">                      &#125;</span><br><span class="line">                    &#125;,</span><br><span class="line"> message: &apos;请输入联系方式&apos; &#125;],</span><br></pre></td></tr></table></figure>
+        <h1 id="每周一记20190105"><a href="#每周一记20190105" class="headerlink" title="每周一记20190105"></a>每周一记20190105</h1><h4 id="在js中优雅使用枚举"><a href="#在js中优雅使用枚举" class="headerlink" title="==在js中优雅使用枚举=="></a>==在js中优雅使用枚举==</h4><p>原文地址：<a href="https://stijndewitt.com/2014/01/26/enums-in-javascript/" target="_blank" rel="noopener">Enums in Javascript</a><br>翻译：<a href="https://www.jianshu.com/p/76fc5ffa9279" target="_blank" rel="noopener">如何在JavaScript中写枚举</a></p>
+<h6 id="one-way"><a href="#one-way" class="headerlink" title="one way"></a>one way</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var SizeEnum = &#123;</span><br><span class="line">  SMALL: 1,</span><br><span class="line">  MEDIUM: 2,</span><br><span class="line">  LARGE: 3,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Then use it like so:</span><br><span class="line"></span><br><span class="line">var mySize = SizeEnum.SMALL;</span><br></pre></td></tr></table></figure>
+<h6 id="the-best-way"><a href="#the-best-way" class="headerlink" title="the best way"></a>the best way</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">Object.freeze</span><br><span class="line">- Object.freeze()将一个对象进行冰冻: 他的意思是, 阻止添加新的属性, 阻止移除已存在的属性; 防止存在的属性，或其可数性、可配置性，或可性，被改变.</span><br><span class="line">- 实际上, 这个对象将有效的不可变了. 这个方法返回的是被冰冻的对象.</span><br><span class="line">-判断浏览器是否支持</span><br><span class="line">if (Object.freeze)</span><br><span class="line">  Object.freeze(DaysEnum);</span><br><span class="line"></span><br><span class="line">var SizeEnum = &#123;</span><br><span class="line">  SMALL: 1,</span><br><span class="line">  MEDIUM: 2,</span><br><span class="line">  LARGE: 3,</span><br><span class="line">  properties: &#123;</span><br><span class="line">    1: &#123;name: &quot;small&quot;, value: 1, code: &quot;S&quot;&#125;,</span><br><span class="line">    2: &#123;name: &quot;medium&quot;, value: 2, code: &quot;M&quot;&#125;,</span><br><span class="line">    3: &#123;name: &quot;large&quot;, value: 3, code: &quot;L&quot;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Then use it like so:</span><br><span class="line"></span><br><span class="line">var mySize = SizeEnum.MEDIUM;</span><br><span class="line">var myCode = SizeEnum.properties[mySize].code; // myCode == &quot;M&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="React16新特性"><a href="#React16新特性" class="headerlink" title="==React16新特性=="></a>==React16新特性==</h4><p>官方：<a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html" target="_blank" rel="noopener">React v16.0</a><br>翻译： <a href="https://webfe.kujiale.com/react-v16-0-yi/" target="_blank" rel="noopener">React v16.0（译）</a></p>
+<h4 id="sessionStorage"><a href="#sessionStorage" class="headerlink" title="==sessionStorage=="></a>==sessionStorage==</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 保存</span><br><span class="line">var obj=[&#123;&#125;,&#123;&#125;,&#123;&#125;]</span><br><span class="line">sessionStorage.setItem(&quot;key&quot;,JSON.stringify(obj))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 获取</span><br><span class="line">var info=JSON.parse(sessionStorage.getItem(&quot;key&quot;))</span><br></pre></td></tr></table></figure>
+<h4 id="npm命令相关"><a href="#npm命令相关" class="headerlink" title="==npm命令相关=="></a>==npm命令相关==</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm cache clean --force 清除缓存</span><br><span class="line">npm info module  查看依赖版本详细信息</span><br><span class="line">npm view mdule versions 查看依赖版本所有版本</span><br><span class="line">npm install module@latest -g 更新最新依赖版本</span><br></pre></td></tr></table></figure>
+<h4 id="maven-test"><a href="#maven-test" class="headerlink" title="==maven test=="></a>==maven test==</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">install -DskipTests -X </span><br><span class="line">install时不执行测试用例，但编译 -X是显示具体运行信息</span><br><span class="line"></span><br><span class="line">install -Dmaven.test.skip  跳过测试不编译install</span><br></pre></td></tr></table></figure>
+<h4 id="js判空函数"><a href="#js判空函数" class="headerlink" title="==js判空函数=="></a>==js判空函数==</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function checkNull(value)&#123;</span><br><span class="line">    if(!value || value == null || typeof value === &apos;undefined&apos;) || value === &apos;&apos;&#123;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function isEmptyObject(object)&#123;</span><br><span class="line">    if(checkNull(object))&#123;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    if(Object.prototype.toString.call(object) ===</span><br><span class="line">    &apos;[Object Object]&apos;&amp;&amp; Object.keys(object).length=== 0)&#123;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -381,7 +379,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://lcccc.com.cn/2018/12/16/form/" title="ant design form 表单" target="_blank" rel="external">http://lcccc.com.cn/2018/12/16/form/</a>
+      <a href="http://lcccc.com.cn/2019/01/05/20190105/" title="每周一记20190105" target="_blank" rel="external">http://lcccc.com.cn/2019/01/05/20190105/</a>
     </li>
     
     
@@ -428,13 +426,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2019/01/05/20190105/" title="每周一记20190105"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2018/11/12/xshell/" title="xshell中配置Java环境以及常用命令"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/12/16/form/" title="ant design form 表单"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
