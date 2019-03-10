@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  <meta name=referrer content=never>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>文件上传下载 | 小白</title>
+  <meta name="description" content="文件上传下载下载服务器端文件,实现excel等文件的下载导出1&amp;lt;Button onClick=&amp;#123;this.download&amp;#125;&amp;gt;下载&amp;lt;/Button&amp;gt; 【GET请求接口】使用window.open 123download = () =&amp;gt; &amp;#123;    window.open(`/react/get/downloadPdf?id=$&amp;#123;t">
+<meta name="keywords" content="Ant Design Pro 2.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件上传下载">
+<meta property="og:url" content="http://lcccc.com.cn/2019/03/10/文件上传下载/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="文件上传下载下载服务器端文件,实现excel等文件的下载导出1&amp;lt;Button onClick=&amp;#123;this.download&amp;#125;&amp;gt;下载&amp;lt;/Button&amp;gt; 【GET请求接口】使用window.open 123download = () =&amp;gt; &amp;#123;    window.open(`/react/get/downloadPdf?id=$&amp;#123;t">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-10T07:18:53.395Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="文件上传下载">
+<meta name="twitter:description" content="文件上传下载下载服务器端文件,实现excel等文件的下载导出1&amp;lt;Button onClick=&amp;#123;this.download&amp;#125;&amp;gt;下载&amp;lt;/Button&amp;gt; 【GET请求接口】使用window.open 123download = () =&amp;gt; &amp;#123;    window.open(`/react/get/downloadPdf?id=$&amp;#123;t">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://lcccc.com.cn/2019/03/10/文件上传下载/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <!-- font-awesome CSS -->
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/css/style.css">
+  
+    
+    
+
+</head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/FanFanJUN" target="_blank">
+          <img class="img-circle img-rotate" src="/images/LC.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">LC</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> 成都, 四川</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/FanFanJUN" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/5663289868" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>公众号：Java与工匠</p> <p>邮箱：1981824361@qq.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/React技术栈/">React技术栈</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工具/">工具</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科技范儿/">科技范儿</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ant-Design-Pro-2-0/">Ant Design Pro 2.0</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chrome/">Chrome</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux常用命令/">Linux常用命令</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React-Router/">React-Router</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SSR自建梯子/">SSR自建梯子</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Umijs/">Umijs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑工具/">编辑工具</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Ant-Design-Pro-2-0/" style="font-size: 14px;">Ant Design Pro 2.0</a> <a href="/tags/Chrome/" style="font-size: 13px;">Chrome</a> <a href="/tags/ES6/" style="font-size: 13.67px;">ES6</a> <a href="/tags/Git/" style="font-size: 13.67px;">Git</a> <a href="/tags/Linux常用命令/" style="font-size: 13.33px;">Linux常用命令</a> <a href="/tags/React-Router/" style="font-size: 13px;">React-Router</a> <a href="/tags/SSR自建梯子/" style="font-size: 13px;">SSR自建梯子</a> <a href="/tags/Umijs/" style="font-size: 13px;">Umijs</a> <a href="/tags/编辑工具/" style="font-size: 13px;">编辑工具</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">9</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/React技术栈/">React技术栈</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/03/10/文件上传下载/" class="title">文件上传下载</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-03-10T07:16:36.000Z" itemprop="datePublished">2019-03-10</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/web前端/">web前端</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/03/10/ES6工具方法/" class="title">ES6工具方法</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-03-10T06:28:45.000Z" itemprop="datePublished">2019-03-10</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2019/02/24/20190224/" class="title">每周一记20190224</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-24T09:16:09.000Z" itemprop="datePublished">2019-02-24</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2019/02/17/20190217/" class="title">每周一记20190217</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-17T14:00:40.000Z" itemprop="datePublished">2019-02-17</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2019/02/03/20190203/" class="title">每周一记20190203</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-02-03T11:05:23.000Z" itemprop="datePublished">2019-02-03</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-文件上传下载" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      文件上传下载
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/03/10/文件上传下载/" class="article-date">
+	  <time datetime="2019-03-10T07:16:36.000Z" itemprop="datePublished">2019-03-10</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/React技术栈/">React技术栈</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Ant-Design-Pro-2-0/">Ant Design Pro 2.0</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/03/10/文件上传下载/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <h1 id="文件上传下载"><a href="#文件上传下载" class="headerlink" title="文件上传下载"></a>文件上传下载</h1><h4 id="下载服务器端文件-实现excel等文件的下载导出"><a href="#下载服务器端文件-实现excel等文件的下载导出" class="headerlink" title="下载服务器端文件,实现excel等文件的下载导出"></a>下载服务器端文件,实现excel等文件的下载导出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Button onClick=&#123;this.download&#125;&gt;下载&lt;/Button&gt;</span><br></pre></td></tr></table></figure>
+<p>【GET请求接口】使用window.open</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">download = () =&gt; &#123;</span><br><span class="line">    window.open(`/react/get/downloadPdf?id=$&#123;this.props.id&#125;&amp;name=$&#123;this.props.name&#125;`)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>【POST请求接口】动态创建临时form表单</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//隐藏的div Dom结构，用于存放临时form</span><br><span class="line">//在隐藏的div里面创建临时表单，获取表单，提交表单，在div节点卸载临时表单。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;downloadDiv&quot; style=&#123;&#123; display: &apos;none&apos; &#125;&#125; /&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 导出数据处理函数</span><br><span class="line">download = () =&gt; &#123;</span><br><span class="line">    const &#123;date&#125; = this.state;</span><br><span class="line">    // 结合隐藏form表单进行react和post接口下载数据</span><br><span class="line">    let divElement = document.getElementById(&apos;downloadDiv&apos;);</span><br><span class="line">    ReactDOM.render(</span><br><span class="line">      &lt;form action=&quot;/api/post/export&quot; method=&quot;post&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">        &lt;input name=&quot;date&quot; type=&quot;text&quot; value=&#123;date&#125; /&gt;     // 变量参数值</span><br><span class="line">        &lt;input name=&quot;status&quot; type=&quot;text&quot; value=&quot;1&quot; /&gt;</span><br><span class="line">      &lt;/form&gt;,</span><br><span class="line">      divElement</span><br><span class="line">    );</span><br><span class="line">    ReactDOM.findDOMNode(divElement)</span><br><span class="line">      .querySelector(&apos;form&apos;)</span><br><span class="line">      .submit();</span><br><span class="line">    ReactDOM.unmountComponentAtNode(divElement);</span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="Upload手动上传解析"><a href="#Upload手动上传解析" class="headerlink" title="Upload手动上传解析"></a>Upload手动上传解析</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://ant.design/components/upload-cn/</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">import &#123;</span><br><span class="line">  Upload, Button, Icon, message,</span><br><span class="line">&#125; from &apos;antd&apos;;</span><br><span class="line">import reqwest from &apos;reqwest&apos;;</span><br><span class="line"></span><br><span class="line">class Demo extends React.Component &#123;</span><br><span class="line">  state = &#123;</span><br><span class="line">    fileList: [],</span><br><span class="line">    uploading: false,</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  handleUpload = () =&gt; &#123;</span><br><span class="line">    const &#123; fileList &#125; = this.state;</span><br><span class="line">    const formData = new FormData();</span><br><span class="line">    fileList.forEach((file) =&gt; &#123;</span><br><span class="line">      formData.append(&apos;files[]&apos;, file);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    this.setState(&#123;</span><br><span class="line">      uploading: true,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    // You can use any AJAX library you like</span><br><span class="line">    reqwest(&#123;</span><br><span class="line">      url: &apos;//jsonplaceholder.typicode.com/posts/&apos;,</span><br><span class="line">      method: &apos;post&apos;,</span><br><span class="line">      processData: false,</span><br><span class="line">      data: formData,</span><br><span class="line">      success: () =&gt; &#123;</span><br><span class="line">        this.setState(&#123;</span><br><span class="line">          fileList: [],</span><br><span class="line">          uploading: false,</span><br><span class="line">        &#125;);</span><br><span class="line">        message.success(&apos;upload successfully.&apos;);</span><br><span class="line">      &#125;,</span><br><span class="line">      error: () =&gt; &#123;</span><br><span class="line">        this.setState(&#123;</span><br><span class="line">          uploading: false,</span><br><span class="line">        &#125;);</span><br><span class="line">        message.error(&apos;upload failed.&apos;);</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    const &#123; uploading, fileList &#125; = this.state;</span><br><span class="line">    const props = &#123;</span><br><span class="line">      // 接受上传的文件类型,比如接收上传文件格式为xlsx或xls,之间用逗号隔开</span><br><span class="line">      accept:&apos;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel&apos;,</span><br><span class="line">      onRemove: (file) =&gt; &#123;</span><br><span class="line">        this.setState((state) =&gt; &#123;</span><br><span class="line">          const index = state.fileList.indexOf(file);</span><br><span class="line">          const newFileList = state.fileList.slice();</span><br><span class="line">          newFileList.splice(index, 1);</span><br><span class="line">          return &#123;</span><br><span class="line">            fileList: newFileList,</span><br><span class="line">          &#125;;</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;,</span><br><span class="line">      // beforeUpload 返回 false 后，手动上传文件。</span><br><span class="line">      //file对象里有size/type属性可以对上传文件的大小和格式作出限制</span><br><span class="line">      beforeUpload: (file) =&gt; &#123;</span><br><span class="line">        this.setState(state =&gt; (&#123;</span><br><span class="line">          fileList: [...state.fileList, file],</span><br><span class="line">        &#125;));</span><br><span class="line">        return false;</span><br><span class="line">      &#125;,</span><br><span class="line">      fileList,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;Upload &#123;...props&#125;&gt;</span><br><span class="line">          &lt;Button&gt;</span><br><span class="line">            &lt;Icon type=&quot;upload&quot; /&gt; Select File</span><br><span class="line">          &lt;/Button&gt;</span><br><span class="line">        &lt;/Upload&gt;</span><br><span class="line">        &lt;Button</span><br><span class="line">          type=&quot;primary&quot;</span><br><span class="line">          onClick=&#123;this.handleUpload&#125;</span><br><span class="line">          disabled=&#123;fileList.length === 0&#125;</span><br><span class="line">          loading=&#123;uploading&#125;</span><br><span class="line">          style=&#123;&#123; marginTop: 16 &#125;&#125;</span><br><span class="line">        &gt;</span><br><span class="line">          &#123;uploading ? &apos;Uploading&apos; : &apos;Start Upload&apos; &#125;</span><br><span class="line">        &lt;/Button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(&lt;Demo /&gt;, mountNode);</span><br></pre></td></tr></table></figure>
+<p>==accept属性类型如下==：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">后缀名       MIME名称</span><br><span class="line">*.3gpp    audio/3gpp, video/3gpp</span><br><span class="line">*.ac3    audio/ac3</span><br><span class="line">*.asf       allpication/vnd.ms-asf</span><br><span class="line">*.au           audio/basic</span><br><span class="line">*.css           text/css</span><br><span class="line">*.csv           text/csv</span><br><span class="line">*.doc    application/msword    </span><br><span class="line">*.dot    application/msword    </span><br><span class="line">*.dtd    application/xml-dtd    </span><br><span class="line">*.dwg    image/vnd.dwg    </span><br><span class="line">*.dxf      image/vnd.dxf</span><br><span class="line">*.gif            image/gif    </span><br><span class="line">*.htm    text/html    </span><br><span class="line">*.html    text/html    </span><br><span class="line">*.jp2            image/jp2    </span><br><span class="line">*.jpe       image/jpeg</span><br><span class="line">*.jpeg    image/jpeg</span><br><span class="line">*.jpg          image/jpeg    </span><br><span class="line">*.js       text/javascript, application/javascript    </span><br><span class="line">*.json    application/json    </span><br><span class="line">*.mp2    audio/mpeg, video/mpeg    </span><br><span class="line">*.mp3    audio/mpeg    </span><br><span class="line">*.mp4    audio/mp4, video/mp4    </span><br><span class="line">*.mpeg    video/mpeg    </span><br><span class="line">*.mpg    video/mpeg    </span><br><span class="line">*.mpp    application/vnd.ms-project    </span><br><span class="line">*.ogg    application/ogg, audio/ogg    </span><br><span class="line">*.pdf    application/pdf    </span><br><span class="line">*.png    image/png    </span><br><span class="line">*.pot    application/vnd.ms-powerpoint    </span><br><span class="line">*.pps    application/vnd.ms-powerpoint    </span><br><span class="line">*.ppt    application/vnd.ms-powerpoint    </span><br><span class="line">*.rtf            application/rtf, text/rtf    </span><br><span class="line">*.svf           image/vnd.svf    </span><br><span class="line">*.tif         image/tiff    </span><br><span class="line">*.tiff       image/tiff    </span><br><span class="line">*.txt           text/plain    </span><br><span class="line">*.wdb    application/vnd.ms-works    </span><br><span class="line">*.wps    application/vnd.ms-works    </span><br><span class="line">*.xhtml    application/xhtml+xml    </span><br><span class="line">*.xlc      application/vnd.ms-excel    </span><br><span class="line">*.xlm    application/vnd.ms-excel    </span><br><span class="line">*.xls           application/vnd.ms-excel    </span><br><span class="line">*.xlt      application/vnd.ms-excel    </span><br><span class="line">*.xlw      application/vnd.ms-excel    </span><br><span class="line">*.xml    text/xml, application/xml    </span><br><span class="line">*.zip            aplication/zip    </span><br><span class="line">*.xlsx     application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span><br></pre></td></tr></table></figure></p>
+<p>==beforeUpload属性对上传文件格式及大小的限制==<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function beforeUpload(file) &#123;</span><br><span class="line">  const isJPG = file.type === &apos;image/jpeg&apos;;</span><br><span class="line">  if (!isJPG) &#123;</span><br><span class="line">    message.error(&apos;You can only upload JPG file!&apos;);</span><br><span class="line">  &#125;</span><br><span class="line">  const isLt2M = file.size / 1024 / 1024 &lt; 2;</span><br><span class="line">  if (!isLt2M) &#123;</span><br><span class="line">    message.error(&apos;Image must smaller than 2MB!&apos;);</span><br><span class="line">  &#125;</span><br><span class="line">  return isJPG &amp;&amp; isLt2M;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://lcccc.com.cn/2019/03/10/文件上传下载/" title="文件上传下载" target="_blank" rel="external">http://lcccc.com.cn/2019/03/10/文件上传下载/</a>
+    </li>
+    
+    
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/FanFanJUN" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/LC.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/FanFanJUN" target="_blank"><span class="text-dark">LC</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <div>Stay hungry,Stay foolish.</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+       
+    <div id="vcomments"></div>
+
+    
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2019/03/10/ES6工具方法/" title="ES6工具方法"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,facebook,twitter,wechat,douban" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/FanFanJUN" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/5663289868" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+    </div>
+</footer>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+  
+    
+    
+    
+        <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+    
+    
+        
+
+
+    
+    
+        
+    
+   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/valine"></script>
+   <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+     var meta = 'nick,mail,link';
+     meta = meta.split(',').filter(function (item) {
+       return GUEST.indexOf(item)>-1;
+     });
+     new Valine({
+         el: '#vcomments' ,
+         verify: false,
+         notify: false,
+         appId: 'P6bLSTrhFFmL2acb97sbzBMG-gzGzoHsz',
+         appKey: 'PmtoxCFkyFfztVR9IJ44NDec',
+         placeholder: '欢迎评论',
+         avatar:'mm',
+         meta:meta,
+         pageSize:'10' || 10,
+         visitor: false
+     });
+   </script>
+
+    
+
+    
+    
+
+
+
+</body>
+</html>
